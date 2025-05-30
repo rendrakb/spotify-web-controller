@@ -6,3 +6,11 @@ chrome.action.onClicked.addListener(() => {
         height: 40
     });
 });
+
+chrome.windows.create({
+    url: "popup.html",
+    type: "panel",
+    width: 250,
+    height: 105,
+    focused: true
+});
