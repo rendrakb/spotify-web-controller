@@ -1,0 +1,21 @@
+{
+  "name": "Spotify Web Controller",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "author": "RendraKB",
+  "description": "Pop up controller for Spotify Web",
+  "permissions": ["activeTab", "tabs", "scripting", "storage"],
+  "host_permissions": ["https://open.spotify.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://open.spotify.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
