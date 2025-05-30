@@ -1,5 +1,5 @@
 # Spotify Web Controller
-A chromium browser extension, controller for Spotify Web player.  
+A chromium browser extension, very simple controller for Spotify Web player.  
 Working client-side without API.  
 Reload the extension to open the pop-up UI.  
 Modify the querySelector in content.js accordingly everytime Spotify restructure their HTML.  
